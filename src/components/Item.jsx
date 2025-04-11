@@ -5,7 +5,7 @@ export const Item = ({ id, imagen, nuevo, nombre, descripcion, precio, envioGrat
     return (
 
         <article
-            className="grid grid-rows-[auto_1fr_auto] md:grid-rows-[350_auto_1fr_auto]  gap-[0.5rem] bg-white rounded-lg text-[clamp(0.1rem,5vw,1rem)]">
+            className="grid grid-rows-[auto_1fr_auto] md:grid-rows-[350_auto_1fr_auto]  gap-[0.5rem] bg-whitesmoke rounded-lg text-[clamp(0.1rem,5vw,1rem)]">
             <figure className="overflow-hidden cursor-pointer">
                 <img src={imagen} alt="" className="hover:scale-[1.2] transition duration-500 ease-in-out" />
             </figure>
