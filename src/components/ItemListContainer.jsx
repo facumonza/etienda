@@ -7,12 +7,12 @@ import Spinner from "./Spinner";
 
 function ItemListContainer() {
     const [products, setProducts] = useState([]);
-    const { generoId } = useParams(); // Capturamos el parámetro de la URL
+    const { generoId } = useParams();
 
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                console.log("Parametro generoId:", generoId); // Depuración
+                console.log("Parametro generoId:", generoId);
 
                 const collectionRef = generoId
                     ? query(collection(db, "items"), where("genero", "==", generoId.toLowerCase()))
