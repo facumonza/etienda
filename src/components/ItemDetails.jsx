@@ -24,7 +24,7 @@ export const ItemDetails = ({ id, imagen, nuevo, nombre, descripcion, precio, en
 
         <>
             <article
-                className="max-w-[900px] m-auto flex flex-col md:flex-row  gap-[2rem] rounded-[0.8rem] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.12)]  text-[clamp(0.1rem,5vw,1rem)]">
+                className="max-w-[900px] m-auto flex flex-col md:flex-row  gap-[2rem] rounded-[0.8rem] bg-whitesmoke shadow-[0_1px_2px_rgba(0,0,0,0.12)]  text-[clamp(0.1rem,5vw,1rem)]">
                 <figure className="overflow-hidden col-span-1 flex justify-center">
                     <img src={imagen} alt="" className="hover:scale-[1.2] transition duration-500 ease-in-out min-h-[200px]" />
                 </figure>
@@ -38,7 +38,7 @@ export const ItemDetails = ({ id, imagen, nuevo, nombre, descripcion, precio, en
                         <div className="flex gap-2 justify-center items-center ">
                             {
                                 quantityAdded > 0 ? (
-                                    <Link to="/cart" className="text-white bg-black w-full py-2 px-3 rounded-[1.8rem] cursor-pointer text-center">Terminar mi compra</Link>
+                                    <Link to="/cart" className="text-white bg-grey w-full py-2 px-3 rounded-[1.8rem] cursor-pointer text-center">Terminar mi compra</Link>
                                 ) : (
                                     <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
                                 )
