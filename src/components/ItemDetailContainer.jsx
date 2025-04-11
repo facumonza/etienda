@@ -10,7 +10,7 @@ function ItemDetailContainer() {
 
     const [products, setProducts] = useState(null);
 
-    const { itemId } = useParams(); // capturamos el parametro
+    const { itemId } = useParams();
 
     useEffect(() => {
 
@@ -33,8 +33,6 @@ function ItemDetailContainer() {
     }, [itemId])
 
     console.log(products)
-
-    
 
     return (
         <section className=" py-[7rem] px-[2rem] flex justify-center  m-auto min-h-[100dvh] w-full gap-[2rem] bg-[#ededed]">
