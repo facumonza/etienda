@@ -38,7 +38,7 @@ export const ItemDetails = ({ id, imagen, nuevo, nombre, descripcion, precio, en
                         <div className="flex gap-2 justify-center items-center ">
                             {
                                 quantityAdded > 0 ? (
-                                    <Link to="/cart" className="text-white bg-grey w-full py-2 px-3 rounded-[1.8rem] cursor-pointer text-center">Terminar mi compra</Link>
+                                    <Link to="/cart" className="text-white bg-red w-full py-2 px-3 rounded-[1.8rem] cursor-pointer text-center">Terminar mi compra</Link>
                                 ) : (
                                     <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
                                 )
